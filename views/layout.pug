@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title SurdoWebsite
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    
+    nav.navbar.navbar-inverse
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') SurdoSolutions
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+                a(href='/blog') Blog
+          ul.nav.navbar-nav.navbar-right
+            if user
+              li 
+                a(href='/users/logout') Logout
+            else
+              li
+                a(href='/users/register') Register 
+              li
+                a(href='/users/login') Login
+    //- // /.navbar-collapse
+    .container
+      block content
+      br
+      hr
+      footer
+        p Copyright &copy; 2017

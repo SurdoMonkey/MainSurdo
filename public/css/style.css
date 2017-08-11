@@ -1,0 +1,20 @@
+.jumbotron{
+  background-color: rgb(36,2,2);
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron p {
+  color: white;
+}
+
+body{
+  background-color: rgb(112,39,39);
+}
+
+h1 {
+  color: white;
+}

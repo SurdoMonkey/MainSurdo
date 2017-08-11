@@ -1,0 +1,17 @@
+{
+  "name": "mainsurdo",
+  "version": "1.0.0",
+  "description": "Surdo Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FQ & AA",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.6",
+    "pug": "^2.0.0-rc.3"
+  }
+}
