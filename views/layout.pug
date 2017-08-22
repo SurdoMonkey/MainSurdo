@@ -3,7 +3,8 @@ html
   head
     title SurdoWebsite
     link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
-    link(rel='stylesheet' href='/css/style.css')
+    
+    //- link(rel='stylesheet' href='/css/style.css')
   body
     
     nav.navbar.navbar-inverse
@@ -32,8 +33,15 @@ html
                 a(href='/users/login') Login
     //- // /.navbar-collapse
     .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg}
       block content
       br
       hr
       footer
         p Copyright &copy; 2017
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')

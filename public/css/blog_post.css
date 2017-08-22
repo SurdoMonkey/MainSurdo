@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(112,39,39);
+}
+
+h1 {
+  color: black;
+}
+
+h4 {
+  color: rgb(122, 124, 114);
+}
+
+p {
+  color: white;
+}
+
+.list-group-item {
+  background-color: gray;
+}
+
+a {
+  color: black;
+}
+
+label {
+  color: rgb(122, 124, 114);
+}

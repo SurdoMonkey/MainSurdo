@@ -1,0 +1,11 @@
+extends layout
+block content
+  link(rel='stylesheet' href='/css/blog_post.css')
+
+  h1= blogPost.title
+  h4= "Written by: "+ blogPost.author
+  p= blogPost.body
+  hr
+  a.btn.btn-default(href='/blog/edit/' +blogPost._id) Edit
+  a.btn.btn-danger.delete-blogpost(href='#', data-id=blogPost._id) Delete
+  

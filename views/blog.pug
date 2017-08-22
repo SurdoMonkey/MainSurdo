@@ -1,9 +1,12 @@
 extends layout
-
 block content
-  
+  link(rel='stylesheet' href='/css/blog_post.css')
+
   h1 BLOG
   ul.list-group
     each blogPost, i in blogposts
       li.list-group-item
-        a(href="#")= blogPost.title
+        a(href="/blog/" + blogPost._id)= blogPost.title
+  
+  if user
+    a.btn.btn-danger(href='/blog/add') Add Blog Post

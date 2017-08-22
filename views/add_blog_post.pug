@@ -1,0 +1,14 @@
+extends layout
+block content
+  link(rel='stylesheet' href='/css/blog_post.css')
+  
+  h1 New Blog Post!
+  form(method='POST', action='/blog/add')
+    #form-group
+      label Title:
+      input.form-control(name='title', type='text')
+        
+    #form-group
+      label Body:
+      textarea.form-control(name='body', type='text')
+    input.btn.btn-primary(type='submit', value='Submit')    
